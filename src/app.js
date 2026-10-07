@@ -1,5 +1,6 @@
 import { analyzeSources, formatInstant, safeUrl } from './analyzer.js';
 import { samples } from './samples.js';
+import { markdownReport, calendarEvent } from './export.js';
 
 const $ = id => document.getElementById(id);
 let report = null;
@@ -140,4 +141,18 @@ function renderTasks() {
 }
 function updateProgress(){ $('task-progress').textContent=`${checked.size} / ${report.tasks.length} checked by you`; }
 
-// Export handlers are added in the next verified slice.
+function download(content,filename,type) {
+  const url=URL.createObjectURL(new Blob([content],{type}));
+  const a=el('a'); a.href=url; a.download=filename; document.body.append(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),1000);
+  $('status').textContent=`Download requested: ${filename}. Check your browser's downloads.`;
+}
+$('export-markdown').addEventListener('click',()=>{
+  if(!report)return;
+  download(markdownReport(report,{selectedId,zone:$('display-zone').value,checked,synthetic}),'ruletrace-report.md','text/markdown;charset=utf-8');
+});
+$('export-calendar').addEventListener('click',()=>{
+  if(!report)return;
+  try { download(calendarEvent(report,selectedId,{synthetic}),'ruletrace-deadline.ics','text/calendar;charset=utf-8'); }
+  catch(error){$('status').textContent=error.message;}
+});

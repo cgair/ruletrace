@@ -2,10 +2,10 @@
 export const CATEGORIES = ['deadline', 'eligibility', 'prize', 'submission'];
 export const MAX_TEXT = 60_000;
 const PATTERNS = {
-  deadline: /\b(deadlines?|due|closes?|closing|ends?|no later than|submission (?:period|window))\b/i,
+  deadline: /\b(deadlines?|due|closes?|closing|ends?|no later than)\b/i,
   eligibility: /\b(eligib\w*|ineligib\w*|residen\w*|countries|country|territor\w*|age|aged|years old|minors?|employees?|immediate family|sanction\w*|prohibited|legal majority|tax|payment|payee|withholding)\b/i,
   prize: /\b(prizes?|awards?|cash|USD|credits?|badges?|vouchers?|swag|stipend|scholarship)\b|\$\s*\d/i,
-  submission: /\b(submit\w*|submission|repository|repositories|source code|demo\w*|video|English|original\w*|new project|skill pack|scope\.md|prd\.md|spec\.md)\b/i,
+  submission: /\b(submit\w*|submission|repository|repositories|source code|demo video|demonstration|video|English|original\w*|new project|skill pack|scope\.md|prd\.md|spec\.md)\b/i,
 };
 const MONTHS = ['january','february','march','april','may','june','july','august','september','october','november','december'];
 const MONTH_PATTERN = MONTHS.map(x => `${x.slice(0,3)}(?:${x.slice(3)})?`).join('|');
@@ -46,17 +46,22 @@ function calendarInstant(year, month, day, hour, minute, meridiem, zone) {
 
 export function parseDates(quote) {
   const results = [];
+  let remainder = quote;
   // Require explicit year, clock time, and zone. Unsupported grammar stays unresolved.
   const english = new RegExp(`\\b(${MONTH_PATTERN})\\.?\\s+(\\d{1,2})(?:st|nd|rd|th)?[,]?\\s+(\\d{4})(?:\\s+at|[,])?\\s+(\\d{1,2})(?::(\\d{2}))?\\s*(am|pm)?\\s+((?:UTC|GMT)[+-]\\d{2}:?\\d{2}|[A-Z]{1,5}|[+-]\\d{2}:?\\d{2})(?![\\w:+-])`, 'gi');
   const iso = /\b(\d{4})-(\d{2})-(\d{2})[T ](\d{2}):(\d{2})(Z|[+-]\d{2}:?\d{2})(?![\w:+-])/gi;
   for (const m of quote.matchAll(english)) {
-    const instant = calendarInstant(+m[3], MONTHS.findIndex(x => x.slice(0,3) === m[1].slice(0,3).toLowerCase()) + 1, +m[2], +m[4], +(m[5] || 0), m[6], m[7]);
+    const ambiguousSuffix = /^\s*(?:\/\s*[A-Z]|or\s+(?:UTC|GMT|EDT|EST|PDT|PST|CST|IST)\b)/i.test(quote.slice(m.index+m[0].length));
+    const instant = ambiguousSuffix ? null : calendarInstant(+m[3], MONTHS.findIndex(x => x.slice(0,3) === m[1].slice(0,3).toLowerCase()) + 1, +m[2], +m[4], +(m[5] || 0), m[6], m[7]);
     results.push({ matched: m[0], instant, reason: instant ? '' : 'Invalid calendar date, clock time, or ambiguous/unsupported timezone.' });
+    remainder=remainder.replace(m[0],'');
   }
   for (const m of quote.matchAll(iso)) {
     const instant = calendarInstant(+m[1], +m[2], +m[3], +m[4], +m[5], '', m[6]);
     results.push({ matched: m[0], instant, reason: instant ? '' : 'Invalid calendar date, clock time, or timezone offset.' });
+    remainder=remainder.replace(m[0],'');
   }
+  if (results.length && new RegExp(`\\b(?:${MONTH_PATTERN})\\.?\\s+\\d|\\b\\d{4}-\\d{2}-\\d{2}`, 'i').test(remainder)) results.push({matched:'',instant:null,reason:'Additional date wording in this passage could not be resolved. Review the full original passage.'});
   if (!results.length) results.push({ matched: '', instant: null, reason: 'No supported explicit date + time + timezone. Check the source; no time was inferred.' });
   return results;
 }
@@ -64,6 +69,8 @@ export function parseDates(quote) {
 export function prizeType(quote) {
   const noncash = /\b(credits?|badges?|vouchers?|swag|merchandise|subscription|in.kind|non.cash)\b/i.test(quote);
   const cash = /\bcash\b|\bUSD\s*\d|\$\s*\d/i.test(quote);
+  const creditOnly = /(?:USD\s*|\$\s*)[\d,.]+\s+(?:in\s+)?(?:\w+\s+){0,2}(?:credits?|vouchers?)\b/i.test(quote) && !/\b(?:cash prizes?|cash awards?|in cash)\b/i.test(quote);
+  if (noncash && cash && creditOnly) return 'Noncash benefit — monetary face value';
   if (noncash && cash) return 'Mixed / inspect wording';
   if (noncash) return 'Noncash benefit';
   if (cash && /\b(no|not|without)\s+(?:a\s+)?cash\b/i.test(quote)) return 'No cash / inspect wording';

@@ -10,7 +10,8 @@ test('different source deadlines stay separate and every quote matches original 
   assert.deepEqual(report.deadlines.filter(d=>d.instant).map(d=>d.instant),['2026-10-26T21:00:00.000Z','2026-10-28T21:00:00.000Z']);
   for(const e of report.evidence){const source=report.sources.find(s=>s.id===e.sourceId);assert.equal(source.text.slice(e.start,e.end),e.quote);}
   assert(report.warnings.some(w=>w.code==='eligibility-review'));
-  assert(report.evidence.find(e=>e.category==='prize' && /badge/.test(e.quote)).prizeType.includes('Mixed'));
+  assert(report.evidence.find(e=>e.category==='prize' && /badge/.test(e.quote)).prizeType.includes('Noncash'));
+  assert.equal(report.deadlines.length,2,'originality wording is not itself a deadline');
 });
 test('explicit offsets, midnight, noon and valid leap day convert exactly',()=>{
   for(const [text,expected] of [
@@ -27,6 +28,11 @@ test('missing zones, ambiguous zones, malformed calendar dates and clocks never 
 test('multiple dates in a single sentence remain separate candidates',()=>{
   const r=analyzeSources([{text:'Deadline: October 26, 2026 at 5 PM EDT, or October 28, 2026 at 5 PM EDT.'}]);
   assert.equal(r.deadlines.length,2);assert.equal(r.conflict,true);
+});
+test('a parsed date does not conceal another unresolved date or competing zone',()=>{
+  const dates=parseDates('October 26, 2026 at 5 PM EDT; final deadline November 1.');
+  assert.equal(dates.length,2);assert.equal(dates[1].instant,null);
+  assert.equal(parseDates('October 26, 2026 at 5 PM EDT/EST')[0].instant,null);
 });
 test('empty, oversized and unrelated input are handled honestly',()=>{
   assert.throws(()=>analyzeSources([{text:'  '}]),/Paste/);
