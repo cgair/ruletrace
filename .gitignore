@@ -1,0 +1,10 @@
+/devpost/learner-profile.md
+/.curriculum/
+/.agents/
+/.env
+/.env.*
+!/.env.example
+/node_modules/
+/artifacts/
+/docs/evidence/
+.DS_Store
