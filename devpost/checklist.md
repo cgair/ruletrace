@@ -37,15 +37,15 @@ Build mode: fast, derived from explicit user request for autonomous implementati
 - [ ] Final review complete — feedback resolved and learner confirms ready to ship.
 
 ## Code Tour and App Map
-- [ ] Learning activity complete — reference route/recap only until actually delivered.
-- [ ] Optional edit and transfer reflection addressed.
-- [ ] `devpost/app-map.html` generated from finished code, checked, and shown.
+- [x] Learning activity complete — agent delivered an evidence-based recap and reference route; no learner practice or mastery claimed.
+- [x] Optional edit and transfer reflection addressed — extra exercise not added under explicit autonomous-work preference; learning question remains optional.
+- [x] `devpost/app-map.html` generated from finished code, checked, and shown in a foreground task tab.
 
-Activity and evidence: Pending. Agent tests do not count as learner hands-on review.
-Route and stops: Pending finished code.
-Edit outcome: Not performed.
-Reflection: Not established.
-Activity mode: Planned reference route.
+Activity and evidence: Explained CST → unresolved instant → disabled selection → refused calendar, using parser tests and actual mobile browser check. Agent tests do not count as learner hands-on review.
+Route and stops: `src/app.js` form/renderDeadlines → `src/analyzer.js` parseDates → `src/export.js` selectedDeadline/calendarEvent. Reference route, not learner-completed navigation.
+Edit outcome: Not performed; no extra exercise requested.
+Reflection: Optional learning question asked; no answer invented.
+Activity mode: Evidence-based recap and static reference map. Map checked for paths, offline assets, styling and layout in Chrome.
 
 ## Revisions
 - Browser inspection found originality wording misclassified as a deadline; removed the broad submission-period keyword from date candidates.

@@ -13,7 +13,11 @@ const port = Number(process.env.PORT || 4173);
 const server = http.createServer(async (req,res) => {
   const headers = { 'X-Content-Type-Options':'nosniff', 'Referrer-Policy':'no-referrer', 'Cache-Control':'no-store', 'Content-Security-Policy': "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'" };
   if (!['GET','HEAD'].includes(req.method)) { res.writeHead(405,headers).end('Method not allowed'); return; }
-  const path = new URL(req.url, 'http://127.0.0.1').pathname;
+  let path;
+  try { path = new URL(req.url, 'http://127.0.0.1').pathname; }
+  catch { res.writeHead(400,headers).end('Bad request'); return; }
+  // The immutable offline map embeds its own stylesheet; the application stays strict.
+  if (path === '/devpost/app-map.html') headers['Content-Security-Policy']=headers['Content-Security-Policy'].replace("style-src 'self'", "style-src 'self' 'unsafe-inline'");
   if (path === '/favicon.ico') { res.writeHead(204,headers).end(); return; }
   const entry = files.get(path);
   if (!entry) { res.writeHead(404,headers).end('Not found'); return; }
