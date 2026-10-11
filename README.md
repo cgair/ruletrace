@@ -71,6 +71,6 @@ The user's explicit autonomous-work instructions overrode repeated interview/app
 
 ## Competition status
 
-As of 2026-10-07, current Devpost rules and submission form could not be reverified because the official site showed maintenance. Historical deadline/prize details are labelled unverified in [rules checklist](docs/rules-checklist.md). This repository is a local project; no registration, public publication or contest submission has been completed by the agent.
+Built as a new project during the Build With AI: Basics submission period. The current official deadline was rechecked on 2026-10-11: October 26, 2026, 17:00 EDT (October 27, 05:00 in Beijing). Required planning documents were created before the first application-code commit. [Rule verification](docs/rules-checklist.md), [actual validation](docs/verification.md), and [publication status](docs/publication-record.md) are documented separately.
 
 MIT licensed. Original application code was started in this new project directory; no old competition code, credentials or personal data were imported. See [LICENSE](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).

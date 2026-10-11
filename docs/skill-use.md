@@ -23,3 +23,7 @@ The current pack says submission fields and narration must be learner-written; o
 ## Known uncertainty
 
 Whether these explicit session workflow adaptations satisfy competition eligibility must be checked against restored official rules. No official written-approval requirement has been invented.
+
+## 2026-10-11 shipping continuation
+
+The user explicitly authorized completing all materials, publishing and submitting. This supplies publication authorization without a second approval ceremony. Personal statements, eligibility facts and subjective survey answers are still not inferred. Factual agent-authored technical captions/copy are disclosed as AI-assisted; the entrant has not been described as authoring them. Any explicit authorship attestation in the actual form must be handled according to the real text.

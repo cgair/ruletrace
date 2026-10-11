@@ -50,3 +50,5 @@ Include original source, tests, README, MIT license, third-party notice, public-
 - [ ] Final Devpost submission reviewed, authorized and success receipt saved.
 
 **No successful registration, publication or submission has been claimed.**
+
+- 2026-10-11 公告复核：官方 updates 的 “Two new questions on the submission form” 确认新增两项领奖必填：Skill Pack 使用说明、法定成年年龄勾选；公开仓库链接必须放入 Try it out 字段。来源：https://learn-ai-basics.devpost.com/updates 。这是公告核实，不代表已访问登录后的完整表单。

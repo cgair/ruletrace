@@ -1,0 +1,23 @@
+# Publication and submission record
+
+## Authorization
+
+On 2026-10-11 the user explicitly instructed the agent to complete all submission materials and submit, requesting intervention only where personally necessary. This authorizes the project repository, demo-video publication and contest submission. It does not supply personal eligibility facts, subjective survey answers, or login/captcha verification.
+
+## Prepared publication contents
+
+Original application, tests, MIT license, development-resource attribution, README and real pre-build planning history. The private learner profile, local tools, raw browser capture frames and environment files remain excluded. All four existing commits were inspected for private paths and credential patterns before publication; no such files or matches were found. Commit metadata uses the author's configured Git identity.
+
+## Current outputs
+
+- Repository: publication in progress.
+- Browser demo: publication in progress.
+- Video: continuous real capture in progress; synthetic event data labelled, English technical captions prepared with AI assistance.
+- Registration: form reached in the existing signed-in Devpost account; personal survey and declarations require the entrant.
+- Final submission: not yet completed; no success receipt.
+
+## Truthful use of the Skill Pack
+
+The public planning history predates application code. The agent used the six pinned skill files and their templates in order, under the entrant's supplied concept and instructions. The entrant delegated product and implementation details and requested autonomous execution. This adapted the course's default interview and approval pacing; no invented interview answers or completed personal exercises are claimed.
+
+The current course's learner-written-copy guidance is retained as a known distinction. This session explicitly asks the agent to prepare all submission content; neutral factual technical materials can be prepared under that instruction, but personal reflections and survey ratings remain the entrant's. The contest's current rules require original owned work and disclosure of incorporated work; the actual form must be checked for any further authorship attestation before final submission.
