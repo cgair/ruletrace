@@ -1,42 +1,40 @@
-# Build With AI: Basics — 规则核验清单
+# Build With AI: Basics — current rule checklist
 
-> **2026-10-11 更新：** 官网恢复。当前首页与规则第 1 节确认报名/提交截止为 2026-10-26 17:00 Eastern（EDT），北京时间 2026-10-27 05:00；仍在提交期。规则第 4 节确认少于 3 分钟演示视频、YouTube/Vimeo 公开链接、公开 GitHub/GitLab/Bitbucket 仓库及开源许可、英文材料或翻译。下表是 10-07 历史核验状态，已被上述明确事项取代；其他事项尚待逐项更新，不能把这次日期复核当成全部合规已确认。来源：[当前规则](https://learn-ai-basics.devpost.com/rules)、[首页](https://learn-ai-basics.devpost.com/)。
+Verified 2026-10-11 (Asia/Shanghai). Sources: [official rules](https://learn-ai-basics.devpost.com/rules), [overview](https://learn-ai-basics.devpost.com/), [updates](https://learn-ai-basics.devpost.com/updates), and the signed-in registration page. Earlier 2026-10-07 maintenance responses remain in local evidence/history; the site is now available.
 
-核验日期：2026-10-07。网络复核时间 `2026-10-07T10:36:42Z`（北京时间 18:36）；随后在已连接的 Chrome 中复核规则页，仍为维护页。
-
-**结论：当前不能确认参赛/领奖资格或提交表单。历史线索不是当前官方结论。** 本地开发已继续，但不能据此宣称符合全部规则。
-
-| 核验项 | 当前证据与状态 | 来源 / 下一步 |
+| Item | Current evidence / requirement | Project status |
 |---|---|---|
-| 官网当前可用性 | 搜索工具初次返回 503；直接请求首页/规则/更新均返回 HTTP 429，正文显示 “We're undergoing planned maintenance. We'll be back shortly.”；Chrome 同样显示维护 | [首页](https://learn-ai-basics.devpost.com/)、[规则](https://learn-ai-basics.devpost.com/rules)、[更新](https://learn-ai-basics.devpost.com/updates)。本地原始响应保存在忽略提交的 `docs/evidence/` |
-| 报名资格 | 未核实本届年龄、地区、制裁/组织关联排除条款；不根据中文或设备位置推断身份 | 等规则恢复；已集中询问必要个人事实，回答只留在私有记录 |
-| 领奖资格 / 收款 | 未确认税务文件、收款方式、可支付地区、身份验证、领奖响应期限及费用；无需现在提供账户或证件 | 规则恢复后核对具体条款；用户本人进行声明和验证 |
-| 截止 | 历史线索：2026-10-26 17:00 EDT；当前未确认是否变更 | 当前规则/首页/更新恢复后比对 |
-| 时区换算 | **条件性计算已验证**：若上述 EDT 时间正确，则 UTC 2026-10-26 21:00，北京时间 2026-10-27 05:00（UTC+8）。不代表截止日期本身已确认 | 本项目测试 `tests/analyzer.test.js` |
-| 提交期内新项目 | 历史线索要求新项目；当前开始/截止区间和既有素材例外未知。代码从本次新建目录开始，首个规划提交 `85aa076` 先于代码 | 官方规则恢复后确认 |
-| 指定工具 | **已确认当前仓库**：Devpost Learn 六步 Skill Pack；实际项目内安装并使用，固定 `a0f0657` | [官方 GitHub](https://github.com/challengepost/learn-ai-basics)，`docs/skill-use.md` |
-| 规划文档 | 当前 README 列出 `devpost/scope.md`、`prd.md`、`spec.md`、`checklist.md`、`app-map.html` 产物。前三个文件已在编码前生成；个人确认状态未伪造 | 仓库 README、skills 2–5 |
-| 代码/视频/部署 | **当前课程要求**短演示视频和公开 GitHub；部署可选；视频不被部署替代。尚未公开发布任何内容 | 仓库 README、`skills/6-ship/SKILL.md` |
-| 视频时长 | 用户要求少于三分钟，准备目标 2:30。**当前课程未指定具体上限**，要求以表单为准 | 实际表单待官网恢复后核实，不能把三分钟称为已核实官方上限 |
-| 语言 | 历史线索要求英文；产品及技术材料用英文准备。当前具体语言条款未知 | 当前规则/表单待确认 |
-| 本人撰写要求 | **已确认当前课程**：项目名、短描述、提交回答、exit survey 和旁白由本人完成；AI 只改拼写语法。这是工具仓库中的实际指引，不冒充已读取赛事法律条款 | README 与 `skills/6-ship/SKILL.md`；AI参考稿不可直接标为本人文案 |
-| 现金奖 | 历史线索：第1名 $1,250、第2名 $750、第3名 $500；参与徽章/社区身份不是现金。**当前金额和类别未重新确认** | 当前规则/首页待确认 |
-| 评审标准 | 历史线索：设计、实际价值、创新、展示。当前权重、详细解释、评审阶段未知 | 当前规则/首页待确认；不编造评分/胜率 |
-| 报名表 / entry survey | 未能通过维护中的首页检查报名入口；没有成功凭证，**未报名** | 恢复后由用户登录/声明；先审阅再提交 |
-| 提交表单及新增题 | 未读取，不猜测新增问题、长度限制或必填项 | 恢复后逐字段抄录进 `docs/submission-prep.md`，替换暂拟映射 |
-| 团队规则 | 默认单人符合用户偏好，是否有规则限制未确认 | 规则恢复后核对 |
+| Registration and submission window | September 22, 2026 10:00 Eastern through October 26, 2026 17:00 Eastern | New project began October 7; still in window |
+| Deadline conversion | 2026-10-26 17:00 EDT = 2026-10-26 21:00 UTC = 2026-10-27 05:00 Asia/Shanghai | Independently covered by date conversion test |
+| Age | Overview/registration: 18+; rules: at least legal majority in residence at entry | Entrant declaration pending; never inferred |
+| Residence exclusions | Rules list Brazil, Quebec, Russia, Crimea, Cuba, Iran, North Korea and other prohibited/comprehensively sanctioned jurisdictions; non-exhaustive US/local-law condition | Residence pending; no universal country approval asserted |
+| Conflicts of interest | Promotion entities, associated employees/agents, immediate family/household, judges/employers and affiliates excluded; organizer discretion for real/apparent conflicts | Entrant facts pending |
+| Team | Individuals, eligible teams and organizations allowed | User specified solo |
+| Originality | New software during submission window; standard tools/frameworks/templates/AI coding assistants allowed; disclose other incorporated pre-existing work | Original code; MIT course-template notice; no old project import |
+| Required tools | Devpost Learn Skill Pack and supporting Node/Git/skill-capable coding agent | Six pinned skills installed/read before code; adaptations disclosed in skill-use.md |
+| Required planning | Generated scope.md, prd.md, spec.md in repository | Created before application-code commit, under devpost/ |
+| Functionality | Working end-to-end PoC, installs and runs consistently, matches demo/description | 12 focused tests and real browser flow checked |
+| Repository | Public GitHub/GitLab/Bitbucket, source/assets/instructions, detectable open-source license | https://github.com/cgair/ruletrace ; MIT |
+| Demo | Less than 3 minutes recommended; working-device footage; public YouTube/Vimeo URL; permitted assets | Real local app recording with English technical captions; publication being completed |
+| Language | English or English translations of all submitted materials | Product, README, plans and submission/video material in English; operational progress notes may remain Chinese |
+| Access | Free unrestricted judging access through judging end; judges may judge only video/text without cloning | Public static app plus repo/video; no account/API cost |
+| Judging | Stage 1 theme + Skill Pack evidence pass/fail. Stage 2 four equally weighted criteria: Design, Potential Impact, Innovation/Idea, Presentation | Align actual capabilities, not invented metrics. Overview displays three criteria; full rules also include Potential Impact |
+| Prizes | 1st $1,250; 2nd $750; 3rd $500 cash. Participation badge/Discord role are not cash | No winning probability or award claim |
+| Judging / announcement | October 27 10:00–October 30 17:00 Eastern; winners on/about November 4 14:00 Eastern | Keep artifacts accessible |
+| Prize verification | Identity, qualifications and creation role verified; winner forms due 10 business days after sent; delivery within 60 days of completed forms | Only needed if selected; entrant handles truthful documents |
+| Payment / tax | Mail or electronic bank delivery after forms; fees, taxes and local banking/FX compliance borne by winner; W-9/W-8BEN may be required; withholding possible | No bank/tax data requested at submission preparation stage |
+| Added mandatory questions | Updates: Skill Pack usage explanation + age-of-majority checkbox required for prize eligibility | Factual usage explanation prepared; age declaration reserved for entrant |
+| Repository field | Updates: public repository URL belongs in “Try it out” | Will fill actual form once registration allows access |
+| Entry survey | Actual registration asks solo/team, primary motivation, confidence 1–5, role; eligibility and rules/TOS agreement | User asked to complete personally; no invented ratings/identity |
+| Final form | Complete actual required fields during window | Exact post-registration fields not yet accessible; no submission success claimed |
 
-## 实际使用流程与课程偏差
+## Authorship and course workflow
 
-用户明确要求自主推进，覆盖课程的逐份确认和采访节奏；文件因此记录 `status: draft` 和 `execution: delegated`，没有虚构本人确认。是否影响赛事合规，需依据恢复后的实际规则判断。不要把本地开发授权当成已完成官方课程的证明，也不增加“必须取得官方书面批准”的额外门槛。
+The course's 6-ship guidance asks for learner-written submission copy and narration. It is recorded separately from legal contest rules: the rules viewed require entrant-owned original work and allow AI coding assistants/technical assistance; do not claim they explicitly waive every curriculum instruction. The user has expressly delegated preparation and submission. Factual AI-assisted technical material is labelled honestly; personal survey answers and learning reflections are not invented. Any explicit attestation on the actual form must be handled according to its text.
 
-## 下一次复核（官网恢复后一次完成）
+## Remaining personal/portal checks
 
-- [ ] 保存完整规则和所有适用更新的时间、URL、正文或截图。
-- [ ] 比对开始/截止时间、时区、原创和 Skill Pack 要求。
-- [ ] 将年龄、居住地、组织关联与实际条款对照；检查领奖税务/支付要求。
-- [ ] 登录后只读取报名和提交表单，记录所有必填字段、字数/视频限制、entry/exit survey。
-- [ ] 更新本表、项目文案及提交检查清单；冲突时明确列出，不擅自裁决。
-- [ ] 用户审阅后再执行报名/公开发布/最终提交；记录成功凭证。
-
-- 2026-10-11 公告复核：官方 updates 的 “Two new questions on the submission form” 确认新增两项领奖必填：Skill Pack 使用说明、法定成年年龄勾选；公开仓库链接必须放入 Try it out 字段。来源：https://learn-ai-basics.devpost.com/updates 。这是公告核实，不代表已访问登录后的完整表单。
+- [ ] Entrant completes registration survey and truthful eligibility/rules declarations.
+- [ ] Exact submission/exit-survey fields inspected after registration.
+- [ ] Public video and repository/app links verified without sign-in.
+- [ ] Final entry submitted and success receipt saved.

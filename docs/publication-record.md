@@ -10,9 +10,9 @@ Original application, tests, MIT license, development-resource attribution, READ
 
 ## Current outputs
 
-- Repository: publication in progress.
-- Browser demo: publication in progress.
-- Video: continuous real capture in progress; synthetic event data labelled, English technical captions prepared with AI assistance.
+- Repository: https://github.com/cgair/ruletrace — created/pushed successfully; API confirms public visibility and MIT license; unauthenticated HTTP 200.
+- Browser demo: https://cgair.github.io/ruletrace/ — GitHub Pages enabled; unauthenticated entry page and JavaScript module returned HTTP 200.
+- Video: 138.20-second real capture completed and decoded; synthetic data labelled, English technical captions prepared with AI assistance. Public YouTube video: https://youtu.be/yXzfrWDzOv0 . Studio displayed “Video published”, Published Oct 11, 2026. Anonymous oEmbed returned HTTP 200 with the matching title and author.
 - Registration: form reached in the existing signed-in Devpost account; personal survey and declarations require the entrant.
 - Final submission: not yet completed; no success receipt.
 

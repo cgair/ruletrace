@@ -1,41 +1,34 @@
 # 项目进度
 
-## 2026-10-11 状态复核（优先于下方 10-07 历史记录）
-- 本地仍无报名/提交成功凭证；本会话未代用户提交。未核查登录账户是否有用户自行提交的记录。
-- 官网已恢复；当前首页和规则第 1 节共同确认报名与提交截至 2026-10-26 17:00 Eastern（当天 EDT），即北京时间 2026-10-27 05:00。2026-10-11 仍处于提交期。
-- 来源：https://learn-ai-basics.devpost.com/ 和 https://learn-ai-basics.devpost.com/rules ，本次通过公开网页工具实时读取。
-- 当前规则确认公开 GitHub/GitLab/Bitbucket 仓库、开源许可、演示视频（少于 3 分钟，YouTube 或 Vimeo 公开可见）、英文材料或英文翻译。个人资格与登录后的实际表单仍待核验。
-- 本次专用 Chrome MCP 启动遭本地 sandbox `Error: spawn EPERM`，未连接或改变浏览器；用公开网页核实截止。未使用旧 autoConnect。
+English translation: [PROGRESS.en.md](PROGRESS.en.md)
 
-更新时间：2026-10-07。本项目是独立新建目录，未使用旧比赛代码、凭据或运行状态；未修改交易项目或调度。
+更新时间：2026-10-11。项目目录 build-with-ai-basics-2026；用户已明确授权完成材料、公开发布和最终提交，不需重复请求发布权限。
 
-## 已完成
-- 官方 Skill Pack 固定 a0f0657，项目内安装；先读流程，再真实生成 scope/PRD/spec/checklist，首个规划提交 85aa076 早于产品代码。
-- 产品工作名 RuleTrace：规则/更新文本→候选证据→来源高亮→日期核对→准备清单→Markdown/ICS 导出。
-- 无第三方 npm 依赖、无运行时模型、无付费服务；Node 本地静态服务器只监听 127.0.0.1。
-- 两个实现切片提交 3b61980 / 4889ad8；12 项自动测试通过。
-- 已在用户现有 Chrome 中实际检查桌面、390px 移动布局、来源弹窗、两个导出、CST 禁止猜测、恶意文本、失效结果清理。截图 artifacts/；详细证据 docs/verification.md。
-- README、MIT/第三方许可证、AI披露、规则清单、英文技术文案参考、2:30 演示镜头/参考脚本和提交检查清单已备齐。
-- devpost/app-map.html 提供可离线打开的代码导览；这是参考路线，不冒充用户已亲自操作。
+## 已完成与证据
+- 独立新项目；官方 Skill Pack 固定 a0f0657，先规划后编码（85aa076→3b61980→4889ad8）。课程默认逐份审阅/采访节奏按用户自主执行要求调整，未编造个人练习或确认。
+- RuleTrace 核心流程：规则/更新→原文证据→截止冲突→明确选择→清单→Markdown/ICS 下载。无运行时模型、付费服务或第三方 npm 依赖。
+- 12 项测试通过；真实桌面/移动端检查、来源弹窗、恶意文本、失效结果、UTC 导出均验证。详见 docs/verification.md。
+- 公开仓库已创建并推送：https://github.com/cgair/ruletrace 。API 确認 public/MIT；匿名 HTTP 200。
+- 免费演示已发布：https://cgair.github.io/ruletrace/ 。匿名首页/模块 HTTP 200；浏览器实际点击示例/分析显示 2 sources / 14 evidence candidates / 2 review flags，日期选择前禁用日历。
+- 真实连续演示捕获完成：669 帧、138.005秒原始过程，编码 MP4 138.20秒；附英文字幕、无音轨、明确合成示例，无用户无关页面。整段解码通过并检查关键帧。文件 artifacts/video/ruletrace-demo.mp4。
+- 已准备英文提交内容/Skill Pack 说明、图片、封面、技术字幕文字稿；公开文档 docs/submission-content.en.md、docs/media/、docs/demo-transcript.en.md。
+- 官网恢复；当前规则及支付/税务条款已核实在 docs/rules-checklist.md。截止北京时间 2026-10-27 05:00。
 
-## 当前状态
-- 本地启动：npm start；http://127.0.0.1:4173 。用户任务标签页已保留；浏览器连接已恢复，不需要修改远程调试设置。
-- 官网首页/规则/更新仍返回维护页面。当前报名资格、收款条款、截止是否更新、评审权重与表单新增问题未确认。
-- 历史截止仅为线索：若 2026-10-26 17:00 EDT 不变，则北京时间 2026-10-27 05:00。不能视为当前官方确认。
-- 个人资格事实、计划审阅和产品反馈已集中异步询问；只收到 Chrome 已开启远程调试的答复，其他尚未回答。
-- 官方课程要求本人撰写提交字段和旁白。AI 技术参考稿明确标为不可冒充本人文案。当前法律规则尚不可访问，不承诺合规已完成。
-- 未录制连续演示视频；现有 DevTools 工具只完成真实截图，未伪称视频。docs/demo-plan.en.md 包含镜头/录制步骤。
-- 未报名、未创建公开仓库、未部署、未发布视频、未最终提交。无成功凭证。
+## 当前阻碍
+- Devpost 账号已登录，但赛事未报名。My projects 明确要求 Register for this hackathon。
+- 报名页要求本人开发信心(1–5)、身份类别、资格/规则声明。已异步请用户到后台报名页自行完成，尚未收到答复；未编造任何个人答案或勾选声明。
+- 年龄、居住地、利益冲突事实也已集中询问，无答复。用户先前要求个人资格声明由本人完成仍有效。
+- 最终提交表单在报名之后才能查看；当前只确认公告新增 Skill Pack 说明、成年勾选，以及 Try it out 必须放公开仓库。无最终提交成功凭证。
+- YouTube 已公开发布：https://youtu.be/yXzfrWDzOv0 。Studio 返回 Video published；匿名 oEmbed HTTP 200 标题一致。平台显示2:19，本地实际138.20秒。
 
-## 记录边界
-规划文件保留 draft + execution: delegated，遵循用户要求自主推进，但不伪造逐份批准、采访、学习反思或课程完成。docs/skill-use.md 记录偏差。个人 profile 在 .gitignore 中，不公开。
+## 保留的后台任务页
+专用 Chrome：报名 https://learn-ai-basics.devpost.com/register 、My projects、YouTube Studio、本项目本地/线上演示、官方规则。默认后台，不切换用户当前窗口。MCP 使用最新 visible_chrome.py 固定持久专用 profile，不用旧 autoConnect。桥接交互应关闭本任务 PTY canonical/echo，避免长文案截断；具体命令见本 session 工具记录。
 
-## 下一步（按阻碍解除顺序）
-1. 官网恢复后一次核实规则、更新、报名与实际提交表单，更新 docs/rules-checklist.md 与 submission-prep.md。
-2. 收到年龄/居住国家地区/组织关联后对照具体资格；必要的税务收款问题只按实际条款询问。
-3. 用户试用并提供反馈；处理有意义的修订，真实更新规划 review 状态。
-4. 用户本人写提交回答/旁白；准备连续真实录像（需选择本项目标签页/录制区域）。
-5. 先展示最终公开内容清单，确认后创建公开 repo/发布视频或可选静态站点；匿名验证链接。
-6. 用户登录/声明、检查最终表单后确认提交；保存成功凭证。
+## 下一步
+1. 发布材料已齐；等待用户本人完成赛事报名与必要资格事实。
+2. 用户本人报名并补必要资格事实后，读取真实最终表单，填入已备内容/图片/链接。
+3. 如有本人主观学习/退出问卷，只请用户补该项；不得代造。文案如有本人撰写声明须按实际文本处理。
+4. 按已有授权正式提交，保存成功凭证；不要把仓库/视频发布称为参赛提交成功。
 
-- 2026-10-11 公告复核：官方 updates 的 “Two new questions on the submission form” 确认新增两项领奖必填：Skill Pack 使用说明、法定成年年龄勾选；公开仓库链接必须放入 Try it out 字段。来源：https://learn-ai-basics.devpost.com/updates 。这是公告核实，不代表已访问登录后的完整表单。
+## 本地启动
+npm start → http://127.0.0.1:4173 。端口只绑定回环；不影响旧交易项目或调度。个人 learner-profile、凭据文件、raw captures/工具均未纳入 Git。

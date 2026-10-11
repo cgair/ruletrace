@@ -9,3 +9,7 @@
 - Runtime uses native browser APIs and the Node.js standard library. There are zero external npm dependencies and no hosted services. System fonts avoid font downloads and licensing complications.
 - Official skill documents are MIT licensed and ignored as local development resources. The app contains original code; planning headings follow the supplied curriculum templates. License notice is preserved in `THIRD_PARTY_NOTICES.md`.
 - Any AI-authored submission reference or technical narration outline is labelled as such. The official curriculum says public submission answers/narration must be learner-written. It is not acceptable to relabel an agent draft as the learner's own writing; current contest rules/form must be checked when accessible.
+
+## Demo production (2026-10-11)
+
+The demo is a continuous sequence of actual RuleTrace browser frames captured from a dedicated task tab, with wall-clock timing preserved. It uses the app's synthetic fixtures. English technical captions were prepared with AI assistance and added below the app frame. No face/voice imitation, generated product effects, music, unrelated browser content or personal data is included. Local temporary imageio-ffmpeg (0.6.0), its FFmpeg 7.1 binary, and Pillow (12.3.0) were used for encoding; they are not app dependencies or distributed runtime components. System Arial fonts were rasterized for caption rendering. An attempted local voice test was not used; final video is silent.

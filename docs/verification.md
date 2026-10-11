@@ -57,3 +57,15 @@ Date: 2026-10-07. Application implementation checkpoint: `4889ad8`. Environment:
 - Opened the actual app-map page in a new foreground task tab; inspected screenshot and DOM. Styles rendered, no horizontal overflow, zero scripts/external assets. All named code anchors checked against source.
 - After restarting the project server for the offline-map route, `/`, `/src/app.js`, `/src/export.js`, `/devpost/app-map.html` returned 200. `/.env`, `/.git/config`, `/devpost/learner-profile.md` and `/../README.md` returned 404. The map alone permits its embedded immutable stylesheet; application CSP remains strict.
 - Revisited the official updates URL in Chrome; still maintenance, with no submission links available in the article.
+
+## 2026-10-11 publication and video checks
+
+- All 12 existing tests passed before publication. Relative entry-page asset paths now support both the loopback server and GitHub Pages subdirectory.
+- Public GitHub repository and GitHub Pages entry page/module each returned HTTP 200 without authentication.
+- Recorded 669 consecutive real browser frames over 138.005 seconds from the existing dedicated Chrome's RuleTrace tab only; no window activation or other-page capture. Actual UI actions are time-stamped in local `artifacts/video/capture.json`.
+- Encoded MP4 has 3,317 frames at 24 fps, duration 138.20 seconds, 1440×1010 including an English caption strip. Repeated encoded frames retain real wall-clock timing; no simulated product results.
+- Full MP4 decode completed without error; representative frames for all nine key actions visually checked. Final recorded CST state had no resolved date and disabled calendar export. Silent video, no music or synthetic voice.
+- Actual captured screenshots and an original typographic cover are in `docs/media/`; English transcript in `docs/demo-transcript.en.md`. Captions disclose synthetic event data and AI-assisted preparation.
+
+- Live GitHub Pages app was tested in the browser after publication: sample + Analyze produced two sources, 14 candidate passages, two review flags and the correct two converted dates; calendar was initially disabled.
+- YouTube Studio reported “Checks complete. No issues found.” then “Video published” for `yXzfrWDzOv0`. Public visibility was explicitly selected. Anonymous oEmbed HTTP 200 returned the exact RuleTrace title and video type. This establishes publication/public embed access; it is not a claim of universal network reachability.

@@ -23,6 +23,10 @@ Record only the RuleTrace tab. Use the synthetic examples. Keep the synthetic no
 4. Verify the video plays from start to finish, all key text is readable, duration is less than 180 seconds, and audio/subtitles match the actual behavior.
 5. Add the entrant's original narration/subtitles. Publish only after reviewing the file and receiving final authorization. Confirm anonymous access.
 
-## Current capture status
+## Current capture status — 2026-10-11
 
-Real Chrome screenshots exist locally in `artifacts/home.jpg`, `review.jpg` and `mobile.jpg`. They document actual rendering, not mockups. The available DevTools tools captured screenshots and interactions but expose no continuous tab-recording command. **No continuous video has been recorded or published.** The screenshots are not represented as a recording.
+Completed an actual continuous browser-frame capture of the running app: 669 real frames across 138.005 seconds. Encoded as a 138.20-second MP4 with English technical captions, no music or voice, and no captured unrelated windows. Full decode passed and key frames were visually inspected. This is no longer a screenshot-only deliverable.
+
+Local file: `artifacts/video/ruletrace-demo.mp4`. Searchable text: `docs/demo-transcript.en.md`. Synthetic examples remain explicitly labelled. Captions were prepared with AI assistance under the user's express content-preparation instruction; no personal reflection is represented as user-authored.
+
+Public YouTube: https://youtu.be/yXzfrWDzOv0 . Studio confirmed “Video published”; anonymous oEmbed returned 200 with the correct title. YouTube displays 2:19 (local encoded duration 138.20 seconds).

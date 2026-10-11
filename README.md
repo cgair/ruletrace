@@ -1,5 +1,7 @@
 # RuleTrace
 
+[Try the live app](https://cgair.github.io/ruletrace/) · [Watch the demo](https://youtu.be/yXzfrWDzOv0) · [Public repository](https://github.com/cgair/ruletrace)
+
 A local evidence workbench for solo hackathon entrants. Paste English competition rules and an update, inspect source passages and deadline conflicts, then export a preparation checklist and an explicitly selected calendar deadline.
 
 **Prototype boundary:** deterministic candidate extraction, not complete natural-language understanding, legal advice, or an eligibility decision. No runtime AI model, API key, account, analytics, or paid service. AI assisted planning and implementation; see [disclosure](docs/ai-and-third-party.md).
@@ -20,6 +22,10 @@ npm test
 ```
 
 Uses Node's built-in test runner. See [actual validation record](docs/verification.md), including browser checks and limits.
+
+![RuleTrace source-backed deadline review](docs/media/deadline-review.jpg)
+
+*Actual application screenshot with synthetic event data.*
 
 ## Try the complete loop
 
