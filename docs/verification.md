@@ -69,3 +69,14 @@ Date: 2026-10-07. Application implementation checkpoint: `4889ad8`. Environment:
 
 - Live GitHub Pages app was tested in the browser after publication: sample + Analyze produced two sources, 14 candidate passages, two review flags and the correct two converted dates; calendar was initially disabled.
 - YouTube Studio reported “Checks complete. No issues found.” then “Video published” for `yXzfrWDzOv0`. Public visibility was explicitly selected. Anonymous oEmbed HTTP 200 returned the exact RuleTrace title and video type. This establishes publication/public embed access; it is not a claim of universal network reachability.
+
+## 2026-10-13 final submission checks
+
+- Registration succeeded after actual entrant-supplied identity-category, confidence and eligibility/rule agreement. No personal answers were inferred.
+- Saved project overview, story, six tags, repository/live links, YouTube embed, four gallery images/captions and a 3:2 original thumbnail. Preview was read back for correct headings, both outgoing URLs and the exact YouTube video ID.
+- Server validation exposed a 255-character limit on the Skill Pack explanation; revised to 247 characters, preserving planning-before-code and adapted interview pacing. Additional info then reached the 4/5 finalization page.
+- Final submit returned the exact success banner in publication-receipt.json. A separate navigation to the event's My projects page displayed RuleTrace as SUBMITTED. Evidence screenshot and snapshot saved locally.
+
+- Anonymous direct HTTP fetch of the Devpost project page returned 403 (site request protection). Logged-in browser confirmation and event dashboard status succeeded; no anonymous Devpost HTTP success is claimed.
+
+- On the submission-day network, the Devpost YouTube iframe reported a connection termination, and a fresh direct oEmbed request ended with SSL UNEXPECTED_EOF_WHILE_READING. The video had been publicly verified on 2026-10-11; no new anonymous playback success is claimed for 10-13. Added a direct YouTube link and the same real MP4 as a GitHub Pages backup to the story; the mandatory YouTube field remains set.

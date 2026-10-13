@@ -6,16 +6,16 @@ Verified 2026-10-11 (Asia/Shanghai). Sources: [official rules](https://learn-ai-
 |---|---|---|
 | Registration and submission window | September 22, 2026 10:00 Eastern through October 26, 2026 17:00 Eastern | New project began October 7; still in window |
 | Deadline conversion | 2026-10-26 17:00 EDT = 2026-10-26 21:00 UTC = 2026-10-27 05:00 Asia/Shanghai | Independently covered by date conversion test |
-| Age | Overview/registration: 18+; rules: at least legal majority in residence at entry | Entrant declaration pending; never inferred |
-| Residence exclusions | Rules list Brazil, Quebec, Russia, Crimea, Cuba, Iran, North Korea and other prohibited/comprehensively sanctioned jurisdictions; non-exhaustive US/local-law condition | Residence pending; no universal country approval asserted |
-| Conflicts of interest | Promotion entities, associated employees/agents, immediate family/household, judges/employers and affiliates excluded; organizer discretion for real/apparent conflicts | Entrant facts pending |
+| Age | Overview/registration: 18+; rules: at least legal majority in residence at entry | Entrant explicitly confirmed; self-attestation recorded privately |
+| Residence exclusions | Rules list Brazil, Quebec, Russia, Crimea, Cuba, Iran, North Korea and other prohibited/comprehensively sanctioned jurisdictions; non-exhaustive US/local-law condition | Entrant supplied residence; no listed exclusion identified; no universal legal approval asserted |
+| Conflicts of interest | Promotion entities, associated employees/agents, immediate family/household, judges/employers and affiliates excluded; organizer discretion for real/apparent conflicts | Entrant explicitly confirmed no such association |
 | Team | Individuals, eligible teams and organizations allowed | User specified solo |
 | Originality | New software during submission window; standard tools/frameworks/templates/AI coding assistants allowed; disclose other incorporated pre-existing work | Original code; MIT course-template notice; no old project import |
 | Required tools | Devpost Learn Skill Pack and supporting Node/Git/skill-capable coding agent | Six pinned skills installed/read before code; adaptations disclosed in skill-use.md |
 | Required planning | Generated scope.md, prd.md, spec.md in repository | Created before application-code commit, under devpost/ |
 | Functionality | Working end-to-end PoC, installs and runs consistently, matches demo/description | 12 focused tests and real browser flow checked |
 | Repository | Public GitHub/GitLab/Bitbucket, source/assets/instructions, detectable open-source license | https://github.com/cgair/ruletrace ; MIT |
-| Demo | Less than 3 minutes recommended; working-device footage; public YouTube/Vimeo URL; permitted assets | Real local app recording with English technical captions; publication being completed |
+| Demo | Less than 3 minutes recommended; working-device footage; public YouTube/Vimeo URL; permitted assets | Real local app recording with English technical captions; public video published and entry submitted |
 | Language | English or English translations of all submitted materials | Product, README, plans and submission/video material in English; operational progress notes may remain Chinese |
 | Access | Free unrestricted judging access through judging end; judges may judge only video/text without cloning | Public static app plus repo/video; no account/API cost |
 | Judging | Stage 1 theme + Skill Pack evidence pass/fail. Stage 2 four equally weighted criteria: Design, Potential Impact, Innovation/Idea, Presentation | Align actual capabilities, not invented metrics. Overview displays three criteria; full rules also include Potential Impact |
@@ -25,8 +25,8 @@ Verified 2026-10-11 (Asia/Shanghai). Sources: [official rules](https://learn-ai-
 | Payment / tax | Mail or electronic bank delivery after forms; fees, taxes and local banking/FX compliance borne by winner; W-9/W-8BEN may be required; withholding possible | No bank/tax data requested at submission preparation stage |
 | Added mandatory questions | Updates: Skill Pack usage explanation + age-of-majority checkbox required for prize eligibility | Factual usage explanation prepared; age declaration reserved for entrant |
 | Repository field | Updates: public repository URL belongs in “Try it out” | Will fill actual form once registration allows access |
-| Entry survey | Actual registration asks solo/team, primary motivation, confidence 1–5, role; eligibility and rules/TOS agreement | User asked to complete personally; no invented ratings/identity |
-| Final form | Complete actual required fields during window | Exact post-registration fields not yet accessible; no submission success claimed |
+| Entry survey | Actual registration asks solo/team, primary motivation, confidence 1–5, role; eligibility and rules/TOS agreement | Entrant explicitly supplied answers and agreement; registration completed |
+| Final form | Complete actual required fields during window | Actual fields inspected and saved; final entry SUBMITTED, 2026-10-13 |
 
 ## Authorship and course workflow
 
@@ -34,7 +34,7 @@ The course's 6-ship guidance asks for learner-written submission copy and narrat
 
 ## Remaining personal/portal checks
 
-- [ ] Entrant completes registration survey and truthful eligibility/rules declarations.
-- [ ] Exact submission/exit-survey fields inspected after registration.
-- [ ] Public video and repository/app links verified without sign-in.
-- [ ] Final entry submitted and success receipt saved.
+- [x] Entrant supplied registration answers and eligibility/rules declarations.
+- [x] Exact submission/exit-survey fields inspected and answered from entrant input.
+- [x] Public video and repository/app links verified without sign-in.
+- [x] Final entry submitted and success receipt saved (entry 1234401).

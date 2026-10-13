@@ -9,6 +9,17 @@
   "anonymous_video_oembed": 200,
   "local_video_seconds": 138.2,
   "youtube_display_duration": "2:19",
-  "devpost_registration": "awaiting entrant declarations and survey",
-  "devpost_submission": "NOT SUBMITTED"
+  "devpost_registration": "CONFIRMED \u2014 Thanks for registering!",
+  "devpost_submission": "SUBMITTED",
+  "registration_verified_at": "2026-10-13T02:09:37.467235+00:00",
+  "devpost_project_url": "https://devpost.com/software/ruletrace-xhgwlu",
+  "devpost_submission_id": "1234401",
+  "devpost_project_id": "1480002",
+  "submission_verified_at": "2026-10-13T02:22:26.111240+00:00",
+  "submission_receipt": "Project submitted! Continue to edit your project until the hackathon deadline: October 26, 2026 at 05:00pm EDT.",
+  "dashboard_status": "SUBMITTED",
+  "local_evidence": [
+    "artifacts/submitted-2026-10-13.png",
+    "artifacts/submitted-2026-10-13.txt"
+  ]
 }

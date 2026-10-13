@@ -1,6 +1,6 @@
 # RuleTrace
 
-[Try the live app](https://cgair.github.io/ruletrace/) · [Watch the demo](https://youtu.be/yXzfrWDzOv0) · [Public repository](https://github.com/cgair/ruletrace)
+[Devpost entry](https://devpost.com/software/ruletrace-xhgwlu) · [Try the live app](https://cgair.github.io/ruletrace/) · [Watch the demo](https://youtu.be/yXzfrWDzOv0) · [Public repository](https://github.com/cgair/ruletrace)
 
 A local evidence workbench for solo hackathon entrants. Paste English competition rules and an update, inspect source passages and deadline conflicts, then export a preparation checklist and an explicitly selected calendar deadline.
 
@@ -26,6 +26,8 @@ Uses Node's built-in test runner. See [actual validation record](docs/verificati
 ![RuleTrace source-backed deadline review](docs/media/deadline-review.jpg)
 
 *Actual application screenshot with synthetic event data.*
+
+[Direct MP4 demo backup](https://cgair.github.io/ruletrace/docs/media/ruletrace-demo.mp4) is available if the YouTube embed cannot connect on your network.
 
 ## Try the complete loop
 
@@ -76,6 +78,8 @@ cp -R .curriculum/skills/. .agents/skills/
 The user's explicit autonomous-work instructions overrode repeated interview/approval gates. Plans therefore honestly remain `draft` with `execution: delegated`; learner review is not fabricated. [Skill-use record](docs/skill-use.md) describes what was actually done and what remains unconfirmed.
 
 ## Competition status
+
+**Submitted successfully on 2026-10-13.** [RuleTrace on Devpost](https://devpost.com/software/ruletrace-xhgwlu), entry 1234401. The site returned “Project submitted!” and the event dashboard shows “SUBMITTED”. This is submission confirmation, not an award or organizer eligibility decision.
 
 Built as a new project during the Build With AI: Basics submission period. The current official deadline was rechecked on 2026-10-11: October 26, 2026, 17:00 EDT (October 27, 05:00 in Beijing). Required planning documents were created before the first application-code commit. [Rule verification](docs/rules-checklist.md), [actual validation](docs/verification.md), and [publication status](docs/publication-record.md) are documented separately.
 

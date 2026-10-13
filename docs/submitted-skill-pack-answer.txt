@@ -1,0 +1,1 @@
+Devpost Learn skills guided Codex from scope.md, prd.md and spec.md (saved before code) to verified build slices and shipping. I supplied the idea and constraints, then delegated execution with adapted interview pacing. Details: docs/skill-use.md.
